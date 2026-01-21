@@ -5,7 +5,7 @@ const WeatherDisplay=(props)=>{
     console.log(temperature,conditions);
     return (
         <>
-        <span style={temperature<20?{color:"red"}:{color:"blue"}}>
+        <span style={temperature>20?{color:rgb(255, 0, 0)}:{color:rgb(0, 0, 255)}}>
             <p>Temperature: {temperature}</p>
             <p>Conditions: {conditions}</p>
         </span>
